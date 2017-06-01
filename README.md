@@ -71,7 +71,7 @@ The store has one final responsibility. Once the state changes, we need a way to
 ```javascript
 function createStore(){
   let state;
-  let listeners;
+  let listeners = [];
   
   const subscribe = (listener) => {
     listeners.push(listener);
@@ -141,3 +141,5 @@ This is a simple example with only one piece of state, but this flow will be the
 * [Dan Abramov on Egghead](https://egghead.io/lessons/javascript-redux-implementing-store-from-scratch)
 
 <a href='https://learn.co/lessons/react-redux-intro-to-stores' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-redux-stores-readme'>Stores Readme</a> on Learn.co and start learning to code for free.</p>
